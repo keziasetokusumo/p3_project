@@ -50,7 +50,7 @@ A DecisionTreeClassifier with the following parameters returns predictions with 
 
 This decision tree model has an accuracy of 0.92, precision of 0.74, recall of 0.70, and F1 of 0.72.
 
-When we use this decision tree model to map out the most influential features on determining customer churn, we find that the most important attributes are:
+When we use this decision tree model to map out the most influential features for determining customer churn, we find that the most important attributes are:
 
 * `total day charge`
 * `total eve charge`
