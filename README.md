@@ -34,7 +34,7 @@ The dataset contains information on the telecom company's customers. Below are t
 
 There are 20 columns in the dataset, and `churn` is treated as the target variable. A `churn` value of 1 means that a customer churns, while a value of 0 means the customer does not churn. The remaining 19 columns provide a glimpse into the customer's profile and usage patterns. At a glance, it appears that some of these columns have a strong relationship between one another. Hence, to avoid multicollinearity, we dropped one of any similar pairs in our data exploration stage.
 
-Below is a preview of the first five columns in SyriaTel's datasest:
+Below is a preview of the first five columns in SyriaTel's raw datasest:
 
 <img width="980" alt="Screen Shot 2023-05-22 at 7 03 39 AM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/7203fb0d-fa3a-403a-a875-7e24b933485a">
 
