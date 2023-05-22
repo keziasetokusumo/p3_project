@@ -32,11 +32,11 @@ The dataset contains information on the telecom company's customers. Below are t
 * `customer service calls`: number of customer service calls
 * `churn`: true if the user terminated the contract, otherwise false
 
-There are 20 columns in the dataset, and `churn` is treated as the target variable. The remaining 19 columns provide a glimpse into the customer's profile and usage patterns. At a glance, it appears that some of these columns have a strong relationship between one another. Hence, to avoid multicollinearity, we dropped one of any similar pairs in our data exploration stage.
+There are 20 columns in the dataset, and `churn` is treated as the target variable. A `churn` value of 1 means that a customer churns, while a value of 0 means the customer does not churn. The remaining 19 columns provide a glimpse into the customer's profile and usage patterns. At a glance, it appears that some of these columns have a strong relationship between one another. Hence, to avoid multicollinearity, we dropped one of any similar pairs in our data exploration stage.
 
-Below is a preview of the first five columns in SyriaTel's datasest.
+Below is a preview of the first five columns in SyriaTel's datasest:
 
 <img width="980" alt="Screen Shot 2023-05-22 at 7 03 39 AM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/7203fb0d-fa3a-403a-a875-7e24b933485a">
 
 ## Methods
-To classify customers into churn or no churn, we analyzed the data with several different algorithms. We built a baseline version of each algorithm (Logistic Regression, K Nearest Neighbors, Decision Trees) and performed iterative modeling to identify which hyperparameters work best. To select a final model, we evaluated performance based on `accuracy`, `precision`, `recall` (number of true positives out of all positives), and `F1 score` (a combination of recall and precision). Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
+ To classify customers into churn or no churn, we analyzed the data with several different algorithms. We built a baseline version of each algorithm (Logistic Regression, K-Nearest Neighbors, Decision Trees) and performed iterative modeling to identify which hyperparameters work best. To select a final model, we evaluated performance based on `accuracy`, `precision`, `recall` (number of true positives out of all positives), and `F1 score` (a combination of recall and precision). Though we test for all four metrics, we give some emphasis to `recall`, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
