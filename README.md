@@ -1,5 +1,5 @@
 # Predicting SyriaTel's Customer Churn
-Using machine learning algorithms to build a model that classifies customers based on predicted churn behavior.
+Using machine learning algorithms to build a model that classifies telecommunication customers based on predicted churn behavior.
 
 ![jake-py9Xxoia2tQ-unsplash](https://github.com/keziasetokusumo/p3_project/assets/111642763/3500ff95-373a-42b4-9dda-e8b4daa1518d)
 
@@ -11,7 +11,7 @@ Using SyriaTel's dataset and machine learning processes, the goal of this projec
 The scope of this project includes data inspection, preprocessing, iterative modeling, final modeling, and overall evaluation.
 
 ## The Data
-The dataset contains information on the telecom company's customers. Below are the descriptions of the columns representing information about each consumer:
+The data folder in the repository contains a file titled `SyriaTel_Data.csv`, which is a dataset containing information on the telecom company's customers. Below are the descriptions of each column:
 
 * `state`: user's state
 * `account length`: number of days the user's account has been active for
