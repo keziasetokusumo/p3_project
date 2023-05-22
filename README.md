@@ -44,6 +44,21 @@ Below is a preview of the first five columns in SyriaTel's raw datasest:
 ## Methods
  To classify customers into churn or no churn, we analyzed the data with several different algorithms. We built a baseline version of each algorithm (Logistic Regression, K-Nearest Neighbors, Decision Trees) and performed iterative modeling to identify which hyperparameters work best. To select a final model, we evaluated performance based on `accuracy`, `precision`, `recall` (number of true positives out of all positives), and `F1 score` (a combination of recall and precision). Though we test for all four metrics, we give some emphasis to `recall`, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
 
+## Conclusion
+A DecisionTreeClassifier with the following parameters returns predictions with the best evaluation metrics:
+`DecisionTreeClassifier(criterion = 'entropy', max_depth = 13, min_samples_leaf = 1, min_samples_split = 2)`
+
+This decision tree model has an accuracy of 0.92, precision of 0.74, recall of 0.70, and F1 of 0.72.
+
+When we use this decision tree model to map out the most influential features on determining customer churn, we find that the most important attributes are:
+
+* `total day charge`
+* `total eve charge`
+* `customer service calls`
+
+## Recommendation
+Customer churn is highly dependent on how much a client is currently paying in phone bills and how often they experience issues requiring customer service. From our data exploration stage, it shows that the 75th percentile for total day charge, total eve charge, and customer service calls are 37 dollars, 20 dollars, and 2 calls, respectively. Knowing this, SyriaTel can implement strategies to increase brand loyalty and raise retention rates for customers ranging near these numbers. Some solutions include offering discounts on other services such as internet and entertainment, introducing rewards programs, increasing price transparency, and making support channels more available and robust.
+
 ## Future Analyses
 * Compare churn data with that of competitors to see how SyriaTel's business fares in comparison
 * Implement customer retention strategies incrementally, and repeat the same analysis to decide which course of action is the most effective
