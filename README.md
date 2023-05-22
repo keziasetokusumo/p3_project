@@ -1,4 +1,5 @@
 # Predicting SyriaTel's Customer Churn
+Using machine learning algorithms to build a model that classifies customers based on predicted churn behavior.
 
 ## Business Overview and Problem Statement
 This project focuses on leveraging data from [SyriaTel](https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset), a telecommunications company, to determine if a given customer will soon churn. Within a business context, churn is defined as the rate at which customers discontinue doing business with a provider over a defined period of time. Churn is a metric that companies within the telecommunications space closely track. 
@@ -40,3 +41,22 @@ Below is a preview of the first five columns in SyriaTel's raw datasest:
 
 ## Methods
  To classify customers into churn or no churn, we analyzed the data with several different algorithms. We built a baseline version of each algorithm (Logistic Regression, K-Nearest Neighbors, Decision Trees) and performed iterative modeling to identify which hyperparameters work best. To select a final model, we evaluated performance based on `accuracy`, `precision`, `recall` (number of true positives out of all positives), and `F1 score` (a combination of recall and precision). Though we test for all four metrics, we give some emphasis to `recall`, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
+
+## Future Analyses
+* Compare churn data with that of competitors to see how SyriaTel's business fares in comparison
+* Implement customer retention strategies incrementally, and repeat the same analysis to decide which course of action is the most effective
+* Dive deeper into price analysis so SyriaTel can estimate the highest price they can charge customers without resulting in churns and pinpoint factors that determine a client's price sensitivity
+
+## Additional Information
+Detailed explanations of the churn analysis and corresponding code can be found in this [Jupyter Notebook](https://github.com/keziasetokusumo/p3_project/blob/main/ChurnAnalysis_Notebook.ipynb). A deliverable containing a high-level overview of SyriaTel's business problem and final recommendations for reducing churn can also be found [here]().
+
+## Repository Structure
+```
+├── data
+├── images  
+├── .gitignore                           
+├── ChurnAnalysis_Notebook.ipynb                                      
+├── README.md
+├── p3_project_deliverable.pdf
+└──
+```
