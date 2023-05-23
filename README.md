@@ -80,7 +80,7 @@ Customer churn is highly dependent on how much a client is currently paying in p
 * Dive deeper into price analysis so SyriaTel can estimate the highest price they can charge customers without resulting in churns and pinpoint factors that determine a client's price sensitivity
 
 ## Additional Information
-Detailed explanations of the churn analysis and corresponding code can be found in this [Jupyter Notebook](https://github.com/keziasetokusumo/p3_project/blob/main/ChurnAnalysis_Notebook.ipynb). A deliverable containing a high-level overview of SyriaTel's business problem and final recommendations for reducing churn can also be found [here]().
+Detailed explanations of the churn analysis and corresponding code can be found in this [Jupyter Notebook](https://github.com/keziasetokusumo/p3_project/blob/main/ChurnAnalysis_Notebook.ipynb). A deliverable containing a high-level overview of SyriaTel's business problem and final recommendations for reducing churn can also be found [here](https://github.com/keziasetokusumo/p3_project/blob/main/p3_project_deliverable.pdf).
 
 ## Repository Structure
 ```
