@@ -44,6 +44,20 @@ Below is a preview of the first five columns in SyriaTel's raw datasest:
 ## Methods
  To classify customers into churn or no churn, we analyzed the data with several different algorithms. We built a baseline version of each algorithm (Logistic Regression, K-Nearest Neighbors, Decision Trees) and performed iterative modeling to identify which hyperparameters work best. To select a final model, we evaluated performance based on `accuracy`, `precision`, `recall` (number of true positives out of all positives), and `F1 score` (a combination of recall and precision). Though we test for all four metrics, we give some emphasis to `recall`, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
 
+## Results
+After looping through several different algorithms, we take the best version of each model and display the results in a summary table:
+
+<img width="394" alt="Screen Shot 2023-05-22 at 8 11 35 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/daf4b5cc-fcb3-42c0-ab71-36db1990ed40">
+
+The summary table indicates that a decision tree is the best algorithm to use. Though it has a slightly lower recall score than that of the logistic regression, the decision tree model is still substantially more accurate and precise than the logistic regression. Using the decision tree, we've created a confusion matrix to visualize the performance of the classification algorithm. The two dimensions are "True label" and "Predicted label":
+
+<img width="323" alt="Screen Shot 2023-05-22 at 8 20 57 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/38872ed1-641c-4176-8f93-d5a3efe2768d">
+
+After we've defined our final model to be the decision tree with tuned hyperparameters, we can also plot feature importance to rank which columns have the most impact on classifying churn or no churn.
+
+<img width="735" alt="Screen Shot 2023-05-22 at 8 38 10 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/cdc7e755-33c5-4775-94a8-6ce6dc01a015">
+
+
 ## Conclusion
 A DecisionTreeClassifier with the following parameters returns predictions with the best evaluation metrics:
 `DecisionTreeClassifier(criterion = 'entropy', max_depth = 13, min_samples_leaf = 1, min_samples_split = 2)`
