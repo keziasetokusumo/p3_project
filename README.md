@@ -57,6 +57,7 @@ After we've defined our final model to be the decision tree with tuned hyperpara
 
 <img width="735" alt="Screen Shot 2023-05-22 at 8 38 10 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/cdc7e755-33c5-4775-94a8-6ce6dc01a015">
 
+From the graph, we can deduce that `total day charge`, `total eve charge`, and `customer service calls` are the most significant customer behaviors to pay attention to for correctly classifying churn.
 
 ## Conclusion
 A DecisionTreeClassifier with the following parameters returns predictions with the best evaluation metrics:
