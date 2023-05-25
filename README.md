@@ -3,6 +3,13 @@ Using machine learning algorithms to build a model that classifies telecommunica
 
 ![jake-py9Xxoia2tQ-unsplash](https://github.com/keziasetokusumo/p3_project/assets/111642763/3500ff95-373a-42b4-9dda-e8b4daa1518d)
 
+## Contact Information
+* Name: Kezia Setokusumo
+* E-mail: kezia.setokusumo@stern.nyu.edu
+* Github: github.com/keziasetokusumo/
+* LinkedIn: linkedin.com/in/keziasetokusumo/
+* Date: May, 2023
+
 ## Business Overview and Problem Statement
 This project focuses on leveraging data from [SyriaTel](https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset), a telecommunications company, to determine if a given customer will soon churn. Within a business context, churn is defined as the rate at which customers discontinue doing business with a provider over a defined period of time. Churn is a metric that companies within the telecommunications space closely track. 
 
