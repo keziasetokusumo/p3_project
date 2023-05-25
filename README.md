@@ -6,8 +6,8 @@ Using machine learning algorithms to build a model that classifies telecommunica
 ## Contact Information
 * Name: Kezia Setokusumo
 * E-mail: kezia.setokusumo@stern.nyu.edu
-* Github: github.com/keziasetokusumo/
-* LinkedIn: linkedin.com/in/keziasetokusumo/
+* [Github](github.com/keziasetokusumo/)
+* [LinkedIn](linkedin.com/in/keziasetokusumo/)
 * Date: May, 2023
 
 ## Business Overview and Problem Statement
