@@ -60,7 +60,7 @@ Afterwards, we performed iterative modeling to identify which hyperparameters wo
 * recall (number of true positives out of all positives)
 * F1 score (a combination of recall and precision)
 
-Though we test for all four metrics, we give some emphasis to `recall`, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
+Though we test for all four metrics, we give some emphasis to recall, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
 
 ## Results
 After looping through the three different algorithms several times, we take the best version of each model and display the results in a summary table:
