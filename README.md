@@ -53,11 +53,13 @@ To classify customers into churn or no churn, we analyzed the data with several 
  * Logistic Regression
  * K-Nearest Neighbors
  * Decision Trees
+
 Afterwards, we performed iterative modeling to identify which hyperparameters work best. To select a final model, we evaluated performance based on:
 * accuracy
 * precision
 * recall (number of true positives out of all positives)
 * F1 score (a combination of recall and precision)
+
 Though we test for all four metrics, we give some emphasis to `recall`, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
 
 ## Results
