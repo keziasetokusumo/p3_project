@@ -70,7 +70,7 @@ From the graph, we can deduce that `total day charge`, `total eve charge`, and `
 A DecisionTreeClassifier with the following parameters returns predictions with the best evaluation metrics:
 `DecisionTreeClassifier(criterion = 'entropy', max_depth = 13, min_samples_leaf = 1, min_samples_split = 2)`
 
-This decision tree model has an accuracy of 0.92, precision of 0.74, recall of 0.70, and F1 of 0.72.
+This decision tree model has an accuracy of 0.92, precision of 0.75, recall of 0.70, and F1 of 0.73.
 
 When we use this decision tree model to map out the most influential features for determining customer churn, we find that the most important attributes are:
 
