@@ -58,11 +58,11 @@ After looping through the three different algorithms several times, we take the 
 
 The summary table indicates that a decision tree is the best algorithm to use. Though it has a slightly lower recall score than that of the logistic regression, the decision tree model is still substantially more accurate and precise than the logistic regression. Using the decision tree, we've created a confusion matrix to visualize the performance of the classification algorithm. The two dimensions are "True label" and "Predicted label":
 
-<img width="323" alt="Screen Shot 2023-05-22 at 8 20 57 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/38872ed1-641c-4176-8f93-d5a3efe2768d">
+<img width="333" alt="Screen Shot 2023-05-26 at 1 07 08 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/4fdf10b7-7f07-4bc2-97b7-676a45fac847">
 
 After we've defined our final model to be the decision tree with tuned hyperparameters, we can also plot feature importance to rank which columns have the most impact on classifying churn or no churn.
 
-<img width="735" alt="Screen Shot 2023-05-22 at 8 38 10 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/cdc7e755-33c5-4775-94a8-6ce6dc01a015">
+<img width="724" alt="Screen Shot 2023-05-26 at 1 07 14 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/eff5fba5-41d3-47cb-9d9d-d193bc9ac4a5">
 
 From the graph, we can deduce that `total day charge`, `total eve charge`, and `customer service calls` are the most significant customer behaviors to pay attention to for correctly classifying churn.
 
@@ -79,7 +79,16 @@ When we use this decision tree model to map out the most influential features fo
 * `customer service calls`
 
 ## Recommendation
-Customer churn is highly dependent on how much a client is currently paying in phone bills and how often they experience issues requiring customer service. From our data exploration stage, it shows that the 75th percentile for total day charge, total eve charge, and customer service calls are 37 dollars, 20 dollars, and 2 calls, respectively. Knowing this, SyriaTel can implement strategies to increase brand loyalty and raise retention rates for customers ranging near these numbers. Some solutions include offering discounts on other services such as internet and entertainment, introducing rewards programs, increasing price transparency, and making support channels more available and robust.
+Overall, we can conclude that customer churn is highly dependent on how much a client is currently paying in phone bills and how often they experience issues requiring customer service. From our data exploration stage, it shows that the 75th percentile for `total day charge`, `total eve charge`, and `customer service calls` are $ 37, $ 20, and 2 calls, respectively. Knowing this, SyriaTel can implement some strategies to increase brand loyalty and raise retention rates for customers ranging near these numbers:
+
+* Added value: Once consumers start paying above a certain threshold, SyriaTel should offer discounts on other services such as internet or entertainment.
+
+* Rewards programs: Research has demonstrated that rewards for loyalty enables businesses to charge higher without as much churn.
+
+* Omnichannel support: SyriaTel can ensure its team is well-equipped to handle requests to create a stress-free process and readily-available help.
+
+* Price transparency: Consumers often lose sight of what they're paying for. When bills get too high, they can easily swap out for a cheaper service without knowing what they're losing out on. SyriaTel should provide a clear breakdown of every bill and use terms easily understood by the public.
+
 
 ## Future Analyses
 * Compare churn data with that of competitors to see how SyriaTel's business fares in comparison
