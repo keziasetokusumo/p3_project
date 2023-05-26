@@ -54,7 +54,7 @@ Below is a preview of the first five columns in SyriaTel's raw datasest:
 ## Results
 After looping through the three different algorithms several times, we take the best version of each model and display the results in a summary table:
 
-<img width="394" alt="Screen Shot 2023-05-22 at 8 11 35 PM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/daf4b5cc-fcb3-42c0-ab71-36db1990ed40">
+![Screen Shot 2023-05-26 at 2 21 24 PM](https://github.com/keziasetokusumo/p3_project/assets/111642763/3c40428b-d201-4f45-b991-e32e4f454c68)
 
 The summary table indicates that a decision tree is the best algorithm to use. Though it has a slightly lower recall score than that of the logistic regression, the decision tree model is still substantially more accurate and precise than the logistic regression. Using the decision tree, we've created a confusion matrix to visualize the performance of the classification algorithm. The two dimensions are "True label" and "Predicted label":
 
