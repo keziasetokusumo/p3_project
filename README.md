@@ -49,7 +49,16 @@ Below is a preview of the first five columns in SyriaTel's raw datasest:
 <img width="980" alt="Screen Shot 2023-05-22 at 7 03 39 AM" src="https://github.com/keziasetokusumo/p3_project/assets/111642763/7203fb0d-fa3a-403a-a875-7e24b933485a">
 
 ## Methods
- To classify customers into churn or no churn, we analyzed the data with several different algorithms. We built a baseline version of each algorithm (Logistic Regression, K-Nearest Neighbors, Decision Trees) and performed iterative modeling to identify which hyperparameters work best. To select a final model, we evaluated performance based on `accuracy`, `precision`, `recall` (number of true positives out of all positives), and `F1 score` (a combination of recall and precision). Though we test for all four metrics, we give some emphasis to `recall`, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
+To classify customers into churn or no churn, we analyzed the data with several different algorithms. We built a baseline version of each algorithm:
+ * Logistic Regression
+ * K-Nearest Neighbors
+ * Decision Trees
+Afterwards, we performed iterative modeling to identify which hyperparameters work best. To select a final model, we evaluated performance based on:
+* accuracy
+* precision
+* recall (number of true positives out of all positives)
+* F1 score (a combination of recall and precision)
+Though we test for all four metrics, we give some emphasis to `recall`, since we want to minimize false negative predictions. In this context, we want to reduce false negative predictions because we'd rather overestimate the number of churning customers versus the number of non-churning customers. Data exploration, cleaning, and preprocessing is also done during the initial stages to ensure that all models can run without error.
 
 ## Results
 After looping through the three different algorithms several times, we take the best version of each model and display the results in a summary table:
