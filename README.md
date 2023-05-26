@@ -79,7 +79,7 @@ When we use this decision tree model to map out the most influential features fo
 * `customer service calls`
 
 ## Recommendation
-Overall, we can conclude that customer churn is highly dependent on how much a client is currently paying in phone bills and how often they experience issues requiring customer service. From our data exploration stage, it shows that the 75th percentile for `total day charge`, `total eve charge`, and `customer service calls` are $ 37, $ 20, and 2 calls, respectively. Knowing this, SyriaTel can implement some strategies to increase brand loyalty and raise retention rates for customers ranging near these numbers:
+Overall, we can conclude that customer churn is highly dependent on how much a client is currently paying in phone bills and how often they experience issues requiring customer service. From our data exploration stage, it shows that the 75th percentile for `total day charge`, `total eve charge`, and `customer service calls` are $37, $20, and 2 calls, respectively. Knowing this, SyriaTel can implement some strategies to increase brand loyalty and raise retention rates for customers ranging near these numbers:
 
 * Added value: Once consumers start paying above a certain threshold, SyriaTel should offer discounts on other services such as internet or entertainment.
 
